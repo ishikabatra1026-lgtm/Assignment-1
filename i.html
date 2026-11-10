@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #0751ae;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 30px;
+            flex-wrap: wrap;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #f47758;
+        }
+
+        .hero p {
+            margin-top: 15px;
+        }
+
+        .hero img {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            background: #c8ddff;
+            object-fit: cover;
+        }
+
+        /* Common Sections */
+        section {
+            padding: 20px 30px;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        /* Skills */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: #0751ae;
+            color: white;
+            padding: 18px;
+            text-align: center;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            background-color: #f47758;
+            transform: translateY(-5px);
+        }
+
+        /* Projects */
+        .projects {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .project {
+            background: white;
+            padding: 30px;
+            margin-bottom: 15px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+
+        /* Contact Form */
+        .contact form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+
+        .contact button {
+            width: 100%;
+            padding: 12px;
+            background: #0751ae;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #f47758;
+        }
+
+        /* Footer */
+        footer {
+            background: #0751ae;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero {
+                text-align: center;
+                justify-content: center;
+                gap: 25px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>My Portfolio</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div>
+            <h1>Hi, I am</h1>
+            <h1><span>Ishika web Developer</span></h1>
+            <p>Building modern web applications with MERN Stack.</p>
+        </div>
+
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+             alt="Profile Image">
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is Ishika. I am a passionate web developer.
+            I enjoy creating modern websites using HTML, CSS and JavaScript.
+            My goal is to become a successful Full Stack Developer.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Beginner</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Beginner</p>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Learning</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A simple HTML & CSS webpage.</p>
+            </div>
+
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Another beginner web project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <form onsubmit="alert('Message submitted!'); return false;">
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Message:</label>
+            <textarea rows="4" placeholder="Write your message"
+                      required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Ishika. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
